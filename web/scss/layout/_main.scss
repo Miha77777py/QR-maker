@@ -1,0 +1,59 @@
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    height: 148px;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    overflow: hidden;
+    transition: height 0.5s,
+                margin-top 0.5s;
+
+    &__title {
+        text-align: center;
+    }
+}
+
+.with-qr {
+    height: 420px;
+}
+
+.qrcode {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 20px;
+
+    &__input {
+        width: 60%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: inherit;
+        border-right: 2px solid white;
+
+        &::placeholder {
+            color: white;
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        color: inherit;
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
